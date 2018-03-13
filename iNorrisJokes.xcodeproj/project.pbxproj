@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D487B6537BD72284CDED28 /* Pods_iNorrisJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */; };
 		E674DDC420582CAB0061AEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC320582CAB0061AEDA /* AppDelegate.swift */; };
 		E674DDC620582CAB0061AEDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC520582CAB0061AEDA /* ViewController.swift */; };
 		E674DDC920582CAB0061AEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDC720582CAB0061AEDA /* Main.storyboard */; };
 		E674DDCB20582CAB0061AEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E674DDCA20582CAB0061AEDA /* Assets.xcassets */; };
 		E674DDCE20582CAB0061AEDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDCC20582CAB0061AEDA /* LaunchScreen.storyboard */; };
+		E674DDD620582D010061AEDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD520582D010061AEDA /* GoogleService-Info.plist */; };
+		E674DDD82058359A0061AEDA /* img in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD72058359A0061AEDA /* img */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24FE2FC52CC5CEE7F71848E8 /* Pods-iNorrisJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNorrisJokes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes.release.xcconfig"; sourceTree = "<group>"; };
+		991E25C9CC4BE91243708B1C /* Pods-iNorrisJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNorrisJokes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes.debug.xcconfig"; sourceTree = "<group>"; };
 		E674DDC020582CAB0061AEDA /* iNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E674DDC320582CAB0061AEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E674DDC520582CAB0061AEDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		E674DDCA20582CAB0061AEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E674DDCD20582CAB0061AEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E674DDCF20582CAB0061AEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E674DDD520582D010061AEDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E674DDD72058359A0061AEDA /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
+		FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNorrisJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D487B6537BD72284CDED28 /* Pods_iNorrisJokes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2696221076D2039D8594F7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				991E25C9CC4BE91243708B1C /* Pods-iNorrisJokes.debug.xcconfig */,
+				24FE2FC52CC5CEE7F71848E8 /* Pods-iNorrisJokes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E674DDB720582CAB0061AEDA = {
 			isa = PBXGroup;
 			children = (
 				E674DDC220582CAB0061AEDA /* iNorrisJokes */,
 				E674DDC120582CAB0061AEDA /* Products */,
+				2696221076D2039D8594F7CB /* Pods */,
+				F4087CCB7C67F3742E6D1119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +79,19 @@
 				E674DDC720582CAB0061AEDA /* Main.storyboard */,
 				E674DDCA20582CAB0061AEDA /* Assets.xcassets */,
 				E674DDCC20582CAB0061AEDA /* LaunchScreen.storyboard */,
+				E674DDD520582D010061AEDA /* GoogleService-Info.plist */,
 				E674DDCF20582CAB0061AEDA /* Info.plist */,
+				E674DDD72058359A0061AEDA /* img */,
 			);
 			path = iNorrisJokes;
+			sourceTree = "<group>";
+		};
+		F4087CCB7C67F3742E6D1119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E674DDD220582CAB0061AEDA /* Build configuration list for PBXNativeTarget "iNorrisJokes" */;
 			buildPhases = (
+				EE1962E342282EF5D4382925 /* [CP] Check Pods Manifest.lock */,
 				E674DDBC20582CAB0061AEDA /* Sources */,
 				E674DDBD20582CAB0061AEDA /* Frameworks */,
 				E674DDBE20582CAB0061AEDA /* Resources */,
+				27B95CE3424E2C8A6C422739 /* [CP] Embed Pods Frameworks */,
+				C446B4B7633F842984CD49A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,13 +156,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E674DDD82058359A0061AEDA /* img in Resources */,
 				E674DDCE20582CAB0061AEDA /* LaunchScreen.storyboard in Resources */,
+				E674DDD620582D010061AEDA /* GoogleService-Info.plist in Resources */,
 				E674DDCB20582CAB0061AEDA /* Assets.xcassets in Resources */,
 				E674DDC920582CAB0061AEDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27B95CE3424E2C8A6C422739 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C446B4B7633F842984CD49A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE1962E342282EF5D4382925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iNorrisJokes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E674DDBC20582CAB0061AEDA /* Sources */ = {
@@ -272,11 +367,13 @@
 		};
 		E674DDD320582CAB0061AEDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991E25C9CC4BE91243708B1C /* Pods-iNorrisJokes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HQB5Y9BU;
 				INFOPLIST_FILE = iNorrisJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kableeeee.iNorrisJokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +384,13 @@
 		};
 		E674DDD420582CAB0061AEDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FE2FC52CC5CEE7F71848E8 /* Pods-iNorrisJokes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HQB5Y9BU;
 				INFOPLIST_FILE = iNorrisJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kableeeee.iNorrisJokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
