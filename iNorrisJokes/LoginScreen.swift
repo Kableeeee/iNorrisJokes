@@ -2,6 +2,8 @@
 //  LoginScreen.swift
 //  iNorrisJokes
 //
+// Головна сторінка. Сторінка авторизації.
+//
 //  Created by Денис on 13.03.18.
 //  Copyright © 2018 DenMekhtiiev. All rights reserved.
 //
@@ -50,6 +52,7 @@ class LoginScreen: UIViewController {
     }
     
     func presentFeedScreen() {
+        print("here")
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let feed:Feed = storyboard.instantiateViewController(withIdentifier: "Feed") as! Feed
         self.present(feed, animated: true, completion: nil)
