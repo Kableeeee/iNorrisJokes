@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04D487B6537BD72284CDED28 /* Pods_iNorrisJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */; };
-		E64500B02058CC7F00A924DF /* LoggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64500AF2058CC7F00A924DF /* LoggedInVC.swift */; };
+		E6482A952058FA9600D064E4 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6482A942058FA9600D064E4 /* Feed.swift */; };
 		E674DDC420582CAB0061AEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC320582CAB0061AEDA /* AppDelegate.swift */; };
 		E674DDC620582CAB0061AEDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC520582CAB0061AEDA /* ViewController.swift */; };
 		E674DDC920582CAB0061AEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDC720582CAB0061AEDA /* Main.storyboard */; };
@@ -16,12 +16,13 @@
 		E674DDCE20582CAB0061AEDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDCC20582CAB0061AEDA /* LaunchScreen.storyboard */; };
 		E674DDD620582D010061AEDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD520582D010061AEDA /* GoogleService-Info.plist */; };
 		E674DDD82058359A0061AEDA /* img in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD72058359A0061AEDA /* img */; };
+		E6969851205902F7004C2160 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6969850205902F7004C2160 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24FE2FC52CC5CEE7F71848E8 /* Pods-iNorrisJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNorrisJokes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes.release.xcconfig"; sourceTree = "<group>"; };
 		991E25C9CC4BE91243708B1C /* Pods-iNorrisJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNorrisJokes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iNorrisJokes/Pods-iNorrisJokes.debug.xcconfig"; sourceTree = "<group>"; };
-		E64500AF2058CC7F00A924DF /* LoggedInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInVC.swift; sourceTree = "<group>"; };
+		E6482A942058FA9600D064E4 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		E674DDC020582CAB0061AEDA /* iNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E674DDC320582CAB0061AEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E674DDC520582CAB0061AEDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		E674DDCF20582CAB0061AEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E674DDD520582D010061AEDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E674DDD72058359A0061AEDA /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
+		E6969850205902F7004C2160 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNorrisJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,8 @@
 			children = (
 				E674DDC320582CAB0061AEDA /* AppDelegate.swift */,
 				E674DDC520582CAB0061AEDA /* ViewController.swift */,
-				E64500AF2058CC7F00A924DF /* LoggedInVC.swift */,
+				E6482A942058FA9600D064E4 /* Feed.swift */,
+				E6969850205902F7004C2160 /* UserProfile.swift */,
 				E674DDC720582CAB0061AEDA /* Main.storyboard */,
 				E674DDCA20582CAB0061AEDA /* Assets.xcassets */,
 				E674DDCC20582CAB0061AEDA /* LaunchScreen.storyboard */,
@@ -234,7 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64500B02058CC7F00A924DF /* LoggedInVC.swift in Sources */,
+				E6969851205902F7004C2160 /* UserProfile.swift in Sources */,
+				E6482A952058FA9600D064E4 /* Feed.swift in Sources */,
 				E674DDC620582CAB0061AEDA /* ViewController.swift in Sources */,
 				E674DDC420582CAB0061AEDA /* AppDelegate.swift in Sources */,
 			);

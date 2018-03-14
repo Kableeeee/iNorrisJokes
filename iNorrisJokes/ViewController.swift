@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            self.presentLoggedScreen()
+            self.presentFeedScreen()
         }
     }
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
                     print(firebaseError.localizedDescription)
                     return
                 }
-                self.presentLoggedScreen()
+                self.presentFeedScreen()
             })
         }
         
@@ -44,15 +44,15 @@ class ViewController: UIViewController {
                     print(firebaseError.localizedDescription)
                     return
                 }
-                self.presentLoggedScreen()
+                self.presentFeedScreen()
             })
         }
     }
     
-    func presentLoggedScreen() {
+    func presentFeedScreen() {
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let loggedInVC:LoggedInVC = storyboard.instantiateViewController(withIdentifier: "LoggedInVC") as! LoggedInVC
-        self.present(loggedInVC, animated: true, completion: nil)
+        let feed:Feed = storyboard.instantiateViewController(withIdentifier: "Feed") as! Feed
+        self.present(feed, animated: true, completion: nil)
     }
 }
 
