@@ -11,8 +11,18 @@ import FirebaseAuth
 
 class UserProfile: UIViewController {
     
+    @IBOutlet weak var addJokePlace: UITextField!
+    
     @IBAction func backToFeedButton(_ sender: Any) {
         self.presentFeedScreen()
+    }
+    
+    @IBAction func addJoke(_ sender: Any) {
+        if self.addJokePlace.isHidden != false{
+            self.addJokePlace.isHidden = false
+        } else {
+            self.addJokePlace.isHidden = true
+        }
     }
     
     @IBAction func logoutButton(_ sender: Any) {
