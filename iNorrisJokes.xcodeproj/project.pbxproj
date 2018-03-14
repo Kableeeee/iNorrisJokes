@@ -10,13 +10,13 @@
 		04D487B6537BD72284CDED28 /* Pods_iNorrisJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */; };
 		E6482A952058FA9600D064E4 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6482A942058FA9600D064E4 /* Feed.swift */; };
 		E674DDC420582CAB0061AEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC320582CAB0061AEDA /* AppDelegate.swift */; };
-		E674DDC620582CAB0061AEDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674DDC520582CAB0061AEDA /* ViewController.swift */; };
 		E674DDC920582CAB0061AEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDC720582CAB0061AEDA /* Main.storyboard */; };
 		E674DDCB20582CAB0061AEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E674DDCA20582CAB0061AEDA /* Assets.xcassets */; };
 		E674DDCE20582CAB0061AEDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E674DDCC20582CAB0061AEDA /* LaunchScreen.storyboard */; };
 		E674DDD620582D010061AEDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD520582D010061AEDA /* GoogleService-Info.plist */; };
 		E674DDD82058359A0061AEDA /* img in Resources */ = {isa = PBXBuildFile; fileRef = E674DDD72058359A0061AEDA /* img */; };
 		E6969851205902F7004C2160 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6969850205902F7004C2160 /* UserProfile.swift */; };
+		E6969853205909BF004C2160 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6969852205909BF004C2160 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		E6482A942058FA9600D064E4 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		E674DDC020582CAB0061AEDA /* iNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E674DDC320582CAB0061AEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E674DDC520582CAB0061AEDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E674DDC820582CAB0061AEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E674DDCA20582CAB0061AEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E674DDCD20582CAB0061AEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		E674DDD520582D010061AEDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E674DDD72058359A0061AEDA /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = SOURCE_ROOT; };
 		E6969850205902F7004C2160 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E6969852205909BF004C2160 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FFB17E3E7743EAACE0F12241 /* Pods_iNorrisJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNorrisJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E674DDC320582CAB0061AEDA /* AppDelegate.swift */,
-				E674DDC520582CAB0061AEDA /* ViewController.swift */,
+				E6969852205909BF004C2160 /* LoginScreen.swift */,
 				E6482A942058FA9600D064E4 /* Feed.swift */,
 				E6969850205902F7004C2160 /* UserProfile.swift */,
 				E674DDC720582CAB0061AEDA /* Main.storyboard */,
@@ -239,8 +239,8 @@
 			files = (
 				E6969851205902F7004C2160 /* UserProfile.swift in Sources */,
 				E6482A952058FA9600D064E4 /* Feed.swift in Sources */,
-				E674DDC620582CAB0061AEDA /* ViewController.swift in Sources */,
 				E674DDC420582CAB0061AEDA /* AppDelegate.swift in Sources */,
+				E6969853205909BF004C2160 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

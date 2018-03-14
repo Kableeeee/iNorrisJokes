@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginScreen.swift
 //  iNorrisJokes
 //
 //  Created by Денис on 13.03.18.
@@ -9,8 +9,8 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
-
+class LoginScreen: UIViewController {
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             self.presentFeedScreen()
         }
     }
-
+    
     @IBAction func createAccountButton(_ sender: Any) {
         
         if let email = emailField.text, let password = passwordField.text {
@@ -55,4 +55,5 @@ class ViewController: UIViewController {
         self.present(feed, animated: true, completion: nil)
     }
 }
+
 
