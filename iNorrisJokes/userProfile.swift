@@ -8,6 +8,9 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+
+
 
 class UserProfile: UIViewController {
     
@@ -21,6 +24,13 @@ class UserProfile: UIViewController {
         if self.addJokePlace.isHidden != false{
             self.addJokePlace.isHidden = false
         } else {
+            // here addJoke
+            if self.addJokePlace.text != ""{
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                let author = (Auth.auth().currentUser?.email)?.split(separator: "@")[0]
+                ref.child("jokes").childByAutoId().setValue(["author": author, "jokeText": self.addJokePlace.text, "voted": 0])
+            }
             self.addJokePlace.isHidden = true
         }
     }
@@ -29,7 +39,6 @@ class UserProfile: UIViewController {
         self.presentLoginScreen()
         do {
             try Auth.auth().signOut()
-            //dismiss(animated: true, completion: nil)
         } catch {
             print("Помилка виходу")
         }

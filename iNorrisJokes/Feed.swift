@@ -9,26 +9,56 @@
 import UIKit
 import FirebaseDatabase
 
-class Feed: UIViewController {
-
+class Feed: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var ref: DatabaseReference?
+    var databaseHandle: DatabaseHandle?
+    var jokesList = [String]()
+    
+    
+    @IBOutlet weak var feedView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var ref: DatabaseReference!
-//        
-//        
-//        ref = Database.database().reference()
-//        
-//        let author = "Jack"
-//        let jokeText = "dfsaddsdsaokdasod ;asd;lk"
-//        let voted = 0
-//        ref.child("jokes").childByAutoId().setValue(["author": author, "jokeText": jokeText, "voted": voted])
+        
+        feedView.delegate = self
+        feedView.dataSource = self
+        
+        ref = Database.database().reference()
+        
+        // Retrieve the jokes and listnen for changes
+        databaseHandle = ref?.child("jokes").observe(.childAdded, with: { (snapshot) in
+            
+            // Code to execute when a child is added under "jokes"
+            //Take the value from the snapshot and added it to jokesList array
+            let joke = snapshot.childSnapshot(forPath: "jokeText")
+            let jokes = String(describing: joke).split(separator: " ", maxSplits: 2, omittingEmptySubsequences: true)[2]
+            self.jokesList.append(String(jokes))
+            
+            self.feedView.reloadData()
+
+        })
         
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jokesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = feedView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let row = indexPath.row
+        cell.textLabel?.numberOfLines = 0;
+        cell.textLabel?.text = jokesList[row]
+        
+        return cell
+    }
+    
+    // Profile button
     @IBAction func profileButton(_ sender: Any) {
         self.presentProfileScreen()
     }
-    
     func presentProfileScreen() {
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let userProfile:UserProfile = storyboard.instantiateViewController(withIdentifier: "UserProfile") as! UserProfile
