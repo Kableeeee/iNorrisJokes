@@ -52,7 +52,6 @@ class UserProfile: UIViewController {
     }
     
     func presentFeedScreen() {
-        print("here")
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let feed:Feed = storyboard.instantiateViewController(withIdentifier: "Feed") as! Feed
         self.present(feed, animated: true, completion: nil)

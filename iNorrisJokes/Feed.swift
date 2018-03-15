@@ -23,6 +23,7 @@ class Feed: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         feedView.delegate = self
         feedView.dataSource = self
+        feedView.tableFooterView = UIView()
         
         ref = Database.database().reference()
         
@@ -51,6 +52,8 @@ class Feed: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         cell.textLabel?.numberOfLines = 0;
         cell.textLabel?.text = jokesList[row]
+        cell.textLabel?.font = UIFont.init(name: "Avenir Next", size: 20.0)
+        cell.textLabel?.textAlignment = NSTextAlignment.center
         
         return cell
     }
